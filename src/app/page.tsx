@@ -1,21 +1,9 @@
-"use client";
+import Image from "next/image";
 
-import { Benefits } from "@/components/home/benefits";
-import { Featured } from "@/components/home/featured";
-import { Search } from "@/components/home/search";
-import { Suggestions } from "@/components/home/suggestions";
-
-import React from "react";
-
-const Home = () => {
+export default function Home() {
   return (
-    <div className="max-w-[100vw] overflow-x-hidden">
-      <Search />
-      <Featured />
-      <Benefits />
-      <Suggestions />
-    </div>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+     <h1>Gaurav Booking App</h1>
+    </main>
   );
-};
-
-export default Home;
+}
